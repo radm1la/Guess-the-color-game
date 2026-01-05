@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess The Color</title>
+</head>
+<body>
+   <div id="startWindow">
+      <h1>Welcome to Guess the Color!!</h1>
+      <p>Select difficulty to start</p>
+
+     <div class="buttons">
+         <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('hard')">Hard</button>
+     </div>
+  </div>
+
+  <div class="mainGame hide">
+    <div class="chances-box">
+        <p>Chances left: <span id="chances"></span></p>
+    </div>
+    <h1>Guess The Color by it's RGB code</h1>
+    <h2>RGB: <span id="rgb-code" style="color: aliceblue;"></span></h2>
+    
+    <div class="colors-box">
+       
+    </div>
+
+    <button onclick="restart()" class="win-restart-btn">Restart</button>
+  </div>
+
+   <div class="endWindow">
+        <h1>Sorry You Lost !!</h1>
+        <button onclick="restart()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
